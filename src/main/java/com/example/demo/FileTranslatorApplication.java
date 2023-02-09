@@ -30,10 +30,10 @@ public class FileTranslatorApplication {
 
     private static String getFileNameFromInput(String fileLanguage) {
         System.out.println("******** Enter the " + fileLanguage + " file name ********");
-        try (Scanner scanner = new Scanner(System.in)) {
+        Scanner scanner = new Scanner(System.in) ;
             String line = scanner.nextLine();
             return line;
-        }
+        
     }
 
     private static String readAndTranslate(String englishFileName) throws IOException, InterruptedException {
